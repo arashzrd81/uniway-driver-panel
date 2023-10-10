@@ -1,0 +1,31 @@
+header .header-sec,
+.header-sec .logout {
+    display: flex;
+    align-items: center;
+}
+
+header .header-sec {
+    padding: 1rem;
+    border-bottom: 0.5px solid #D6DAE2;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 4px 20px -2px #C6CACF40;
+}
+
+.header-sec .logout {
+    column-gap: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #272B31;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    header .header-sec {
+        padding: 0.85rem 2.8rem;
+        border-radius: 75px;
+    }
+}

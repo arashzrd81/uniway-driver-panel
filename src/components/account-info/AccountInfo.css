@@ -1,0 +1,53 @@
+.account-info-sec,
+.account-info-sec > *,
+.account-info-sec .info > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-info-sec {
+    width: 90%;
+    padding: 1.5rem;
+    row-gap: 2rem;
+    background-color: white;
+}
+
+.account-info-sec .info > * {
+    padding: 1rem 0;
+    border-bottom: 1px solid #D6DAE2;
+    row-gap: 0.5rem;
+}
+
+.account-info-sec .info :last-child {
+    border-bottom: none;
+}
+
+.account-info-sec .info span:first-child {
+    font-size: 0.85rem;
+    color: #9AA4B7;
+}
+
+.account-info-sec .info span:last-child {
+    font-size: 1rem;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .account-info-sec {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .account-info-sec .info {
+        border-bottom: 1px solid #D6DAE2;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .account-info-sec .info > * {
+        border-bottom: none;
+    }
+}

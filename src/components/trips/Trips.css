@@ -1,0 +1,48 @@
+.trips-sec,
+.trips-sec > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-sec {
+    width: 90%;
+    row-gap: 2rem;
+}
+
+.trips-sec > * {
+    row-gap: 0.75rem;
+}
+
+.trips-sec h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.trips-sec .trip {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.trips-sec .trip .info {
+    font-size: 0.9rem;
+}
+
+.trips-sec .future-trips input {
+    width: min(45%, 250px);
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    .trips-sec {
+        width: 70%;
+        margin-top: 1.5rem;
+    }
+}

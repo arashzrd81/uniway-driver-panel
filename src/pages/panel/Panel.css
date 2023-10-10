@@ -1,0 +1,39 @@
+.panel-container,
+.panel-container main .main-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-container {
+    row-gap: 45px;
+    background-color: #F4F6F9;
+}
+
+.panel-container > * {
+    width: 100%;
+}
+
+.panel-container > * > * {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.panel-container main .main-sec {
+    gap: 2rem;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    .panel-container > * {
+        padding: 1.6rem 2.1rem;
+    }
+    .panel-container main .main-sec {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

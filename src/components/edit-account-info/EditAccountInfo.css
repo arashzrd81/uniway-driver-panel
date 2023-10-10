@@ -1,0 +1,61 @@
+.edit-account-info-sec,
+.edit-account-info-sec .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-account-info-sec {
+    width: 90%;
+    padding: 1.5rem;
+    row-gap: 3rem;
+    background-color: white;
+}
+
+.edit-account-info-sec .fields {
+    width: 100%;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.edit-account-info-sec fieldset {
+    width: min(100%, 350px);
+    border: 1px solid #6F7785;
+    border-radius: 5px;
+}
+
+.edit-account-info-sec fieldset legend {
+    padding: 0 0.5rem;
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+    color: #6F7785;
+}
+
+.edit-account-info-sec fieldset input {
+    width: 100%;
+    padding: 0 0.9rem 0.7rem;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.edit-account-info-sec .buttons button:last-child {
+    border: 1px solid #FFD43C;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 992px) {
+    .edit-account-info-sec {
+        width: 70%;
+    }
+    .edit-account-info-sec .fields {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .edit-account-info-sec .fields fieldset {
+        width: 45%;
+    }
+}
