@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import ChangePassword from "../change-password/ChangePassword";
 import "./AccountInfo.css";
 
 
 const AccountInfo = ({setBox}) => {
+
+    const [showChangePassword, setShowChangePassword] = useState(false);
+
     return (
         <section className="account-info-sec">
             <div className="info">
@@ -24,11 +28,15 @@ const AccountInfo = ({setBox}) => {
                     <i className="fa-solid fa-pen"></i>
                     <span>ویرایش اطلاعات کاربری</span>
                 </button>
-                <button className="btn-outline-blue">
+                <button className="btn-outline-blue" onClick={() => setShowChangePassword(true)}>
                     <i className="fa-solid fa-lock"></i>
                     <span>ویرایش رمز ورود</span>
                 </button>
             </div>
+            {
+                showChangePassword &&
+                <ChangePassword closeChangePassword={() => setShowChangePassword(false)} />
+            }
         </section>
     );
 };

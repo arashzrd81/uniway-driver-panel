@@ -16,11 +16,14 @@ const EditAccountInfo = ({setBox}) => {
                 </fieldset>
                 <fieldset>
                     <legend>شماره همراه</legend>
-                    <input type="text" />
+                    <div className="phone-number">
+                        <input type="text" style={{textAlign: "left"}} />
+                        <span>98+</span>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>کد ملی</legend>
-                    <input type="text" />
+                    <input type="text" style={{textAlign: "left"}} />
                 </fieldset>
             </div>
             <div className="buttons">

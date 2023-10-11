@@ -17,7 +17,7 @@ const Profile = ({box, setBox}) => {
             <span className="username">نام کاربری</span>
             <div className="buttons">
                 <button className={box === "trips" ? "btn-blue" : "btn-outline-blue"} onClick={() => setBox("trips")}>
-                    <i class="fa-solid fa-bus-simple"></i>
+                    <i className="fa-solid fa-bus-simple"></i>
                     <span>سفرهای من</span>
                 </button>
                 <button className={box === "trips" ? "btn-outline-blue" : "btn-blue"} onClick={() => setBox("account-info")}>

@@ -70,6 +70,8 @@ form input {
 
 form button {
     width: min(70%, 330px);
+    position: absolute;
+    bottom: 40px;
 }
 
 .buttons {
@@ -107,6 +109,8 @@ form button {
     }
     form button {
         width: 100%;
+        margin-top: 1rem;
+        position: static;
     }
 }
 
