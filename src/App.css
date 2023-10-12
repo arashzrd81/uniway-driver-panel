@@ -16,6 +16,39 @@ html {
     --gray: #6F7785;
 }
 
+.container,
+.container main .main-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #F4F6F9;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.container > * > * {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container main .main-sec {
+    gap: 3rem 2rem;
+}
+
+.list-item {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
 button {
     border: none;
     border-radius: 10px;
@@ -106,6 +139,14 @@ form button {
 @media screen and (min-width: 768px) {
     html {
         font-size: 18px;
+    }
+    .container > * {
+        padding: 1.6rem 2.1rem;
+    }
+    .panel-container main .main-sec {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
     form button {
         width: 100%;

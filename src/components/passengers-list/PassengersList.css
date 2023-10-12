@@ -1,0 +1,14 @@
+.passengers-list-sec {
+    width: min(90%, 1040px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.passengers-list-sec h2 {
+    font-size: 1.4rem;
+}
+
+.passengers-list-sec .passenger-info {
+    font-size: 0.85rem;
+}

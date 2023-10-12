@@ -9,6 +9,10 @@ const Profile = ({box, setBox}) => {
             <div className="avatar">
                 <img src={avatar} alt="avatar" />
                 {
+                    box === "edit-account-info" &&
+                    <i className="fa-solid fa-camera"></i>
+                }
+                {
                     Array(6).fill().map(
                         (item, index) => <span key={index}></span>
                     )

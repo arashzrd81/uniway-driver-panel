@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Search from "../search/Search";
 import "./Trips.css";
 
 
@@ -15,10 +17,7 @@ const Trips = () => {
             </div>
             <div className="future-trips">
                 <h2>سفرهای آینده</h2>
-                <div className="trip">
-                    <span className="info">جستجوی مسافر بر اساس</span>
-                    <input type="text" placeholder="تاریخ حرکت" />
-                </div>
+                <Search title="جستجوی سفر بر اساس" placeholder="تاریخ حرکت" />
                 {
                     Array(3).fill().map(
                         (item, index) => <Trip key={index}></Trip>
@@ -32,9 +31,11 @@ const Trips = () => {
 
 const Trip = () => {
     return (
-        <div className="trip">
-            <span className="info">تهران به قزوین، ساعت 8:30</span>
-            <button className="btn-yellow">مشاهده سفر</button>
+        <div className="trip list-item">
+            <span className="title">تهران به قزوین، ساعت 8:30</span>
+            <Link to="/thetrip">
+                <button className="btn-yellow">مشاهده سفر</button>
+            </Link>
         </div>
     );
 };

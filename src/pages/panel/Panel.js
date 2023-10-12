@@ -13,7 +13,7 @@ const Panel = () => {
     const [box, setBox] = useState("trips");
 
     return (
-        <div className="panel-container">
+        <div className="container panel-container">
             <Header />
             <main>
                 <section className="main-sec">

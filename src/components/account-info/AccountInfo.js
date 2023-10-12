@@ -1,7 +1,26 @@
 import React, { useState } from "react";
+import Info from "../info/Info";
 import ChangePassword from "../change-password/ChangePassword";
 import "./AccountInfo.css";
 
+
+const info = [
+    {
+        id: 1,
+        title: "نام و نام خانوادگی",
+        content: "نام راننده در این قسمت"
+    },
+    {
+        id: 2,
+        title: "شماره همراه",
+        content: "09123456789"
+    },
+    {
+        id: 3,
+        title: "کد ملی",
+        content: "0312345678"
+    }
+];
 
 const AccountInfo = ({setBox}) => {
 
@@ -9,20 +28,7 @@ const AccountInfo = ({setBox}) => {
 
     return (
         <section className="account-info-sec">
-            <div className="info">
-                <div>
-                    <span>نام و نام خانوادگی</span>
-                    <span>نام راننده در این قسمت</span>
-                </div>
-                <div>
-                    <span>شماره همراه</span>
-                    <span>09120000000</span>
-                </div>
-                <div>
-                    <span>کد ملی</span>
-                    <span>0310000000</span>
-                </div>
-            </div>
+            <Info info={info} />
             <div className="buttons">
                 <button className="btn-outline-blue" onClick={() => setBox("edit-account-info")}>
                     <i className="fa-solid fa-pen"></i>

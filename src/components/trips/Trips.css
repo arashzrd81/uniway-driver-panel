@@ -15,25 +15,11 @@
 
 .trips-sec h2 {
     font-size: 1rem;
-    font-weight: bold;
     color: var(--gray);
 }
 
-.trips-sec .trip {
-    padding: 1rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-}
-
-.trips-sec .trip .info {
+.trips-sec .trip .title {
     font-size: 0.85rem;
-}
-
-.trips-sec .future-trips input {
-    width: min(45%, 250px);
 }
 
 

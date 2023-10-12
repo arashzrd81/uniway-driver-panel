@@ -1,0 +1,45 @@
+.info,
+.info .the-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .the-info {
+    padding: 1rem 0;
+    border-bottom: 1px solid #D6DAE2;
+    row-gap: 0.5rem;
+}
+
+.info > :last-child {
+    border-bottom: none;
+}
+
+.info .the-info :first-child {
+    font-size: 0.85rem;
+    color: #9AA4B7;
+}
+
+.info .the-info :last-child {
+    font-size: 0.95rem;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+    .info .the-info {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .info {
+        border-bottom: 1px solid #D6DAE2;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info .the-info {
+        border-bottom: none;
+    }
+}

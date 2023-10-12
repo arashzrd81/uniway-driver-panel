@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer>
             <section className="footer-sec">
-                <div className="info">
+                <div className="main-part">
                     <div className="description">
                         <img src={line1} alt="line1" />
                         <h3>سامانه Uniway</h3>
