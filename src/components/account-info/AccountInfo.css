@@ -7,6 +7,7 @@
 .account-info-sec {
     width: 90%;
     padding: 1.5rem;
+    border-radius: 10px;
     row-gap: 2rem;
     background-color: white;
 }
@@ -26,6 +27,10 @@
 }
 
 @media screen and (min-width: 992px) {
+    .account-info-sec .info {
+        justify-content: flex-start;
+        column-gap: 170px;
+    }
     .account-info-sec .info .the-info {
         width: fit-content;
     }

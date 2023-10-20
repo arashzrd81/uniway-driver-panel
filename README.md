@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Uniway Driver Panel
+Driver panel of Qazvin International University bus service system (Uniway).
+<div>
+    <img src="https://img.shields.io/badge/Website%20Status-Online-135e02.svg" height="25px" />
+    <img src="https://img.shields.io/badge/Responsive-Yes-135e02.svg" height="25px" />
+    <img src="https://img.shields.io/badge/Users-Bus%20Drivers%20(Not%20Public)-135e02.svg" height="25px" />
+</div>
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+I, along with some of my classmates at Qazvin International University, found out that the bus service system of the university has problems, for example, there is no ticket reservation system for students, and this caused crowding in the bus park area. Also, the students did not know exactly when the bus service would arrive and were delayed. That's why we decided to develop Uniway system for university bus service. This system is being developed for three categories of people, namely students, bus drivers and administrators. I'm responsible for the drivers panel front-end and you can see it above.
+(Note: This panel is for only university bus drivers who have already registered, so other people cannot login to it)
+<br /><br />
 
-## Available Scripts
+### Features and Capabilities
+- Login/Logout
+- Show the driver profile
+- Show the driver trips with date filter
+- Update account information (first name, last name and profile picture)
+- Change account password
+- Show the trips details and passengers
+<br />
 
-In the project directory, you can run:
+### Technology Stack
+<div>
+    <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" height="25px" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" height="25px" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" height="25px" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" height="25px" />
+</div>
+<br />
 
-### `npm start`
+### My Enhanced Skills
+- Working with API requests (POST, GET and PATCH)
+- Understanding the concept of JWT and working with that
+- Making protected routes
+- Working with local storage
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Website Environment
+<div>
+    <img src="https://github.com/arashzrd81/uniway-driver-panel/assets/84037427/247faba9-c555-4d7f-804a-a6e5b49c9380" width="80%" />
+</div>
+<br />
+<div>
+    <img src="https://github.com/arashzrd81/uniway-driver-panel/assets/84037427/c32acb9e-53a9-4ff6-9dcd-28f2aeb4064a" width="80%" />
+</div>
+<br />
+<div>
+    <img src="https://github.com/arashzrd81/uniway-driver-panel/assets/84037427/6422c24c-e39b-41cf-a963-73c7764bc6c9" width="80%" />
+</div>

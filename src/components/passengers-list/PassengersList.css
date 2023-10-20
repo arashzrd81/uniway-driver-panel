@@ -12,3 +12,21 @@
 .passengers-list-sec .passenger-info {
     font-size: 0.85rem;
 }
+
+.passengers-list-sec .show {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 992px) {
+    .passengers-list-sec .show {
+        cursor: pointer;
+    }
+}

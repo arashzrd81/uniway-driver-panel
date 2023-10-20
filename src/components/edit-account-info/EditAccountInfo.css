@@ -7,6 +7,7 @@
 .edit-account-info-sec {
     width: 90%;
     padding: 1.5rem;
+    border-radius: 10px;
     row-gap: 3rem;
     background-color: white;
 }
@@ -21,17 +22,6 @@
     width: min(95%, 350px);
     border: 1px solid #6F7785;
     border-radius: 5px;
-}
-
-.edit-account-info-sec fieldset .phone-number {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.edit-account-info-sec .phone-number span {
-    padding: 0 0 0.5rem 0.9rem;
-    font-size: 0.9rem;
-    color: #6F7785;
 }
 
 .edit-account-info-sec fieldset legend {
@@ -64,9 +54,9 @@
     .edit-account-info-sec .fields {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .edit-account-info-sec .fields fieldset {
-        width: 45%;
+        width: 47%;
     }
 }

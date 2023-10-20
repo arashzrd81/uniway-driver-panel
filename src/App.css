@@ -123,7 +123,13 @@ form button {
     align-items: center;
     column-gap: 0.5rem;
     font-size: 0.85rem;
-    /* transition: 0.5s; */
+}
+
+.toast {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    font-size: 16px;
 }
 
 
@@ -133,6 +139,9 @@ form button {
 @media screen and (min-width: 576px) {
     html {
         font-size: 17px;
+    }
+    .toast {
+        width: 360px;
     }
 }
 

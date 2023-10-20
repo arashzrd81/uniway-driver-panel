@@ -18,6 +18,23 @@
     color: var(--gray);
 }
 
+.trips-sec .future-trips .search {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.trips-sec .search .title {
+    font-size: 0.85rem;
+}
+
+.trips-sec .search input {
+    width: min(45%, 250px);
+}
+
 .trips-sec .trip .title {
     font-size: 0.85rem;
 }

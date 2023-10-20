@@ -1,17 +1,44 @@
-import React from "react";
-import Search from "../search/Search";
+import React, { useState } from "react";
 import "./PassengersList.css";
 
 
-const PassengersList = () => {
+const PassengersList = ({passengers}) => {
+
+    const [showMore, setShowMore] = useState(false);
+
     return (
         <section className="passengers-list-sec">
             <h2>لیست مسافرها</h2>
-            <Search title="جستجوی مسافر بر اساس" placeholder="شماره تلفن" />
             {
-                Array(3).fill().map(
-                    (item, index) => <PassengerInfo key={index} name="نام و نام خانوادگی مسافر" phoneNumber="شماره تلفن" />
+                passengers.slice(0, 3).map((passenger, index) =>
+                    <PassengerInfo
+                        key={index}
+                        name={passenger.first_name + " " + passenger.last_name}
+                        phoneNumber={passenger.phone}
+                    />
                 )
+            }
+            {
+                showMore ?
+                <>
+                    {
+                        passengers.slice(3, ).map((passenger, index) =>
+                            <PassengerInfo
+                                key={index}
+                                name={passenger.first_name + " " + passenger.last_name}
+                                phoneNumber={passenger.phone}
+                            />
+                        )
+                    }
+                    <div className="show" onClick={() => setShowMore(false)}>
+                        <span>نمایش کمتر</span>
+                        <i className="fa-solid fa-chevron-up"></i>
+                    </div>
+                </> :
+                <div className="show" onClick={() => setShowMore(true)}>
+                    <span>نمایش بیشتر</span>
+                    <i className="fa-solid fa-chevron-down"></i>
+                </div>
             }
         </section>
     );

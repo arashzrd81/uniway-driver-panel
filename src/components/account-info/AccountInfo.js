@@ -1,30 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 import Info from "../info/Info";
 import ChangePassword from "../change-password/ChangePassword";
 import "./AccountInfo.css";
 
 
-const info = [
-    {
-        id: 1,
-        title: "نام و نام خانوادگی",
-        content: "نام راننده در این قسمت"
-    },
-    {
-        id: 2,
-        title: "شماره همراه",
-        content: "09123456789"
-    },
-    {
-        id: 3,
-        title: "کد ملی",
-        content: "0312345678"
-    }
-];
-
 const AccountInfo = ({setBox}) => {
 
     const [showChangePassword, setShowChangePassword] = useState(false);
+    const [info, setInfo] = useState([]);
+    const {driver} = useContext(AuthContext);
+
+    useEffect(() => {
+        setInfo([
+            {
+                id: 1,
+                title: "نام و نام خانوادگی",
+                content: driver.firstName + " " + driver.lastName
+            },
+            {
+                id: 2,
+                title: "کد ملی",
+                content: driver.nCode
+            }
+        ]);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <section className="account-info-sec">

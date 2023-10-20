@@ -21,11 +21,17 @@ header .header-sec {
 
 
 
-/* Media Query */
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
     header .header-sec {
         padding: 0.85rem 2.8rem;
         border-radius: 75px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-sec .logout {
+        cursor: pointer;
     }
 }

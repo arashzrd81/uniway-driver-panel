@@ -13,7 +13,7 @@ const Footer = () => {
             <section className="footer-sec">
                 <div className="main-part">
                     <div className="description">
-                        <img src={line1} alt="line1" />
+                        <img src={line1} alt="" />
                         <h3>سامانه Uniway</h3>
                         <p>
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
@@ -24,27 +24,27 @@ const Footer = () => {
                     <div className="links-symbols">
                         <div className="links">
                             <div className="quick-access">
-                                <img src={line2} alt="line2" />
+                                <img src={line2} alt="" />
                                 <h3>دسترسی سریع</h3>
                                 <nav>
-                                    <Link to="/">سفرهای من</Link>
-                                    <Link to="/">صفحه اصلی</Link>
-                                    <Link to="/">قوانین استرداد</Link>
-                                    <Link to="/">قوانین و مقررات</Link>
+                                    <Link to="/panel">سفرهای من</Link>
+                                    <Link to="/panel">صفحه اصلی</Link>
+                                    <Link to="/panel">قوانین استرداد</Link>
+                                    <Link to="/panel">قوانین و مقررات</Link>
                                 </nav>
                             </div>
                             <div className="about-us">
-                                <img src={line2} alt="line2" />
+                                <img src={line2} alt="" />
                                 <h3>درباره ما</h3>
                                 <nav>
-                                    <Link to="/">تماس با ما</Link>
-                                    <Link to="/">تیم اکما</Link>
+                                    <Link to="/panel">تماس با ما</Link>
+                                    <Link to="/panel">تیم اکما</Link>
                                 </nav>
                             </div>
                         </div>
                         <div className="trust-symbols">
-                            <img src={university} alt="university" />
-                            <img src={enamad} alt="enamad" />
+                            <img src={university} alt="" />
+                            <img src={enamad} alt="" />
                         </div>
                     </div>
                 </div>

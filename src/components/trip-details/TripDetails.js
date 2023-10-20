@@ -3,40 +3,7 @@ import Info from "../info/Info";
 import "./TripDetails.css";
 
 
-const info = [
-    {
-        id: 1,
-        title: "مبدا",
-        content: "قزوین"
-    },
-    {
-        id: 2,
-        title: "مقصد",
-        content: "تهران"
-    },
-    {
-        id: 3,
-        title: "زمان حرکت",
-        content: "12:00"
-    },
-    {
-        id: 4,
-        title: "زمان رسیدن",
-        content: "14:00"
-    },
-    {
-        id: 5,
-        title: "ظرفیت سفر",
-        content: "35"
-    },
-    {
-        id: 6,
-        title: "شماره پلاک",
-        content: "77 368 ب 56"
-    }
-];
-
-const TripDetails = () => {
+const TripDetails = ({info}) => {
 
     const [showDetails, setShowDetails] = useState(true);
 
@@ -44,7 +11,11 @@ const TripDetails = () => {
         <section className="trip-details-sec">
             <div className="title">
                 <h2>اطلاعات سفر</h2>
-                <i className="fa-solid fa-chevron-up" onClick={() => setShowDetails(!showDetails)}></i>
+                {
+                    showDetails ?
+                    <i className="fa-solid fa-chevron-up" onClick={() => setShowDetails(false)}></i> :
+                    <i className="fa-solid fa-chevron-down" onClick={() => setShowDetails(true)}></i>
+                }
             </div>
             {
                 showDetails &&
