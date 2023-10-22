@@ -15,6 +15,8 @@ const EditAccountInfo = ({setBox, pfp, setPfp}) => {
         const regex = /^[\u0600-\u06FF\s]{3,20}$/;
         if (!regex.test(firstName.trim()) || !regex.test(lastName.trim())) {
             showToast("error", "!نام و نام خانوادگی معتبر وارد کنید");
+        } else if (firstName === driver.firstName && lastName === driver.lastName && !pfp.data) {
+            showToast("error", "!شما هنوز موردی را تغییر نداده‌اید");
         } else {
             axios
                 .patch("/profile/edit",
@@ -47,6 +49,8 @@ const EditAccountInfo = ({setBox, pfp, setPfp}) => {
                                 lastName: driverData.last_name,
                                 pfp: "https://api.uniways.ir/" + driverData.image
                             });
+                            localStorage.setItem("firstName", driverData.first_name);
+                            localStorage.setItem("lastName", driverData.last_name);
                         })
                         .catch(() => {
                             showToast("error", "!خطای غیرمنتظره‌ای رخ داد");
@@ -55,6 +59,7 @@ const EditAccountInfo = ({setBox, pfp, setPfp}) => {
                         preview: "",
                         ...pfp
                     });
+                    setBox("trips");
                     showToast("success", "پروفایل شما با موفقیت تغییر کرد");
                 })
                 .catch(() => {

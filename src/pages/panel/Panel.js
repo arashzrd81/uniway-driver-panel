@@ -46,6 +46,8 @@ const Panel = () => {
                     pfp: "https://api.uniways.ir/" + driverData.image,
                     password: driverData.password
                 });
+                localStorage.setItem("firstName", driverData.first_name);
+                localStorage.setItem("lastName", driverData.last_name);
             })
             .catch(() => {
                 showToast("error", "!خطای غیرمنتظره‌ای رخ داد");
@@ -110,7 +112,7 @@ const Panel = () => {
 
     return (
         <div className="container panel-container">
-            <Header />
+            <Header page="panel" />
             <main>
                 <section className="main-sec">
                     <Profile box={box} setBox={setBox} pfp={pfp} setPfp={setPfp} />

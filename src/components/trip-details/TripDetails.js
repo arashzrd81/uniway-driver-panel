@@ -9,12 +9,12 @@ const TripDetails = ({info}) => {
 
     return (
         <section className="trip-details-sec">
-            <div className="title">
+            <div className="title" onClick={() => setShowDetails(!showDetails)}>
                 <h2>اطلاعات سفر</h2>
                 {
                     showDetails ?
-                    <i className="fa-solid fa-chevron-up" onClick={() => setShowDetails(false)}></i> :
-                    <i className="fa-solid fa-chevron-down" onClick={() => setShowDetails(true)}></i>
+                    <i className="fa-solid fa-chevron-up"></i> :
+                    <i className="fa-solid fa-chevron-down"></i>
                 }
             </div>
             {

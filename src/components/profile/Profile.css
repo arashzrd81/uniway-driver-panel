@@ -95,6 +95,11 @@
     color: var(--blue);
 }
 
+.profile-sec .buttons button {
+    padding-right: 1.5rem;
+    justify-content: flex-start;
+}
+
 
 
 /* Media Queries */

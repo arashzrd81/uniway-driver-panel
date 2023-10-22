@@ -73,7 +73,7 @@ const TheTrip = () => {
 
     return (
         <div className="container the-trip-container">
-            <Header />
+            <Header page="the-trip" />
             <main>
                 <section className="main-sec">
                     <TripDetails info={info} />

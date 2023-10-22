@@ -1,5 +1,5 @@
 header .header-sec,
-.header-sec .logout {
+.header-sec .part {
     display: flex;
     align-items: center;
 }
@@ -12,11 +12,51 @@ header .header-sec {
     box-shadow: 0px 4px 20px -2px #C6CACF40;
 }
 
-.header-sec .logout {
+.header-sec .part {
     column-gap: 0.5rem;
     text-decoration: none;
     font-size: 0.9rem;
     color: #272B31;
+}
+
+.header-sec .drop-down {
+    position: relative;
+}
+
+.header-sec .drop-down,
+.header-sec .drop-down .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-sec .drop-down .menu {
+    width: max(100%, 9.5rem);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    z-index: 3;
+    top: 48px;
+    right: -1rem;
+    row-gap: 7px;
+    background-color: #cbcbcb1a;
+    backdrop-filter: blur(5px);
+}
+
+.header-sec .drop-down .menu-hidden {
+    display: none;
+}
+
+.header-sec .menu > * {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.header-sec .menu > :last-child {
+    padding-bottom: 1rem;
+}
+
+.header-sec .drop-down .fa-chevron-up,
+.header-sec .drop-down .fa-chevron-down {
+    font-size: 0.7rem;
 }
 
 
@@ -31,7 +71,7 @@ header .header-sec {
 }
 
 @media screen and (min-width: 992px) {
-    .header-sec .logout {
+    .header-sec .part {
         cursor: pointer;
     }
 }

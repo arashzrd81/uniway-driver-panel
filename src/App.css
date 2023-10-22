@@ -24,6 +24,7 @@ html {
 }
 
 .container {
+    row-gap: 2.5rem;
     background-color: #F4F6F9;
 }
 
@@ -148,6 +149,9 @@ form button {
 @media screen and (min-width: 768px) {
     html {
         font-size: 18px;
+    }
+    .container {
+        row-gap: 0;
     }
     .container > * {
         padding: 1.6rem 2.1rem;
