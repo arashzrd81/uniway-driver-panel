@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/uniway-driver-panel/static/css/main.0d6bdd43.css",
+    "main.js": "/uniway-driver-panel/static/js/main.aa57db7c.js",
+    "static/media/IRANSans.ttf": "/uniway-driver-panel/static/media/IRANSans.623768ac2bdc3c1f78df.ttf",
+    "static/media/university.svg": "/uniway-driver-panel/static/media/university.bf7f2edac30def047748c21e24541ab4.svg",
+    "index.html": "/uniway-driver-panel/index.html",
+    "static/media/line-1.svg": "/uniway-driver-panel/static/media/line-1.8796bf0f8d774b5f4ba61331cf1c9b0f.svg",
+    "static/media/line-2.svg": "/uniway-driver-panel/static/media/line-2.c63a1efc6ff72660679116bfb1b0bb1b.svg",
+    "main.0d6bdd43.css.map": "/uniway-driver-panel/static/css/main.0d6bdd43.css.map",
+    "main.aa57db7c.js.map": "/uniway-driver-panel/static/js/main.aa57db7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d6bdd43.css",
+    "static/js/main.aa57db7c.js"
+  ]
+}
