@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import line1 from "../../assets/images/line-1.svg";
 import line2 from "../../assets/images/line-2.svg";
 import university from "../../assets/images/university.svg";
@@ -27,18 +27,18 @@ const Footer = () => {
                                 <img src={line2} alt="" />
                                 <h3>دسترسی سریع</h3>
                                 <nav>
-                                    <Link to="/panel">سفرهای من</Link>
-                                    <Link to="/panel">صفحه اصلی</Link>
-                                    <Link to="/panel">قوانین استرداد</Link>
-                                    <Link to="/panel">قوانین و مقررات</Link>
+                                    <Link to="/panel#">سفرهای من</Link>
+                                    <Link to="/panel#">صفحه اصلی</Link>
+                                    <Link to="/panel#">قوانین استرداد</Link>
+                                    <Link to="/panel#">قوانین و مقررات</Link>
                                 </nav>
                             </div>
                             <div className="about-us">
                                 <img src={line2} alt="" />
                                 <h3>درباره ما</h3>
                                 <nav>
-                                    <Link to="/panel">تماس با ما</Link>
-                                    <Link to="/panel">تیم اکما</Link>
+                                    <Link to="/panel#">تماس با ما</Link>
+                                    <Link to="/panel#">تیم اکما</Link>
                                 </nav>
                             </div>
                         </div>

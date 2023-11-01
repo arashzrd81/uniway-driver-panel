@@ -20,6 +20,8 @@ const ChangePassword = ({closeChangePassword}) => {
             showToast("error", "!رمز ورود فعلی نادرست وارد شده‌است");
         } else if (newPassword.length < 6) {
             showToast("error", "!رمز ورود باید بیشتر از 6 نویسه باشد");
+        } else if (!/^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9!@#$%]{6,16}$/.test(newPassword)) {
+            showToast("error", "رمز ورود باید شامل حداقل یک عدد و حرف انگلیسی باشد");
         } else if (newPassword !== repeatPassword) {
             showToast("error", "!رمز ورود جدید با تکرارش مطابقت ندارد");
         } else {

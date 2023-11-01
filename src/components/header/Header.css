@@ -34,11 +34,10 @@ header .header-sec {
     border-radius: 0 0 10px 10px;
     position: absolute;
     z-index: 3;
-    top: 48px;
+    top: 45px;
     right: -1rem;
     row-gap: 7px;
-    background-color: #cbcbcb1a;
-    backdrop-filter: blur(5px);
+    background-color: white;
 }
 
 .header-sec .drop-down .menu-hidden {

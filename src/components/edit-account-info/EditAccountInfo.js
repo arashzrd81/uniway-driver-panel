@@ -63,7 +63,7 @@ const EditAccountInfo = ({setBox, pfp, setPfp}) => {
                     showToast("success", "پروفایل شما با موفقیت تغییر کرد");
                 })
                 .catch(() => {
-                    showToast("error", "!خطای غیرمنتظره‌ای رخ داد");
+                    showToast("error", "!لطفا عکس دیگری را امتحان کنید");
                 })
         }
     };

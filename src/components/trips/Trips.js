@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Trips.css";
 
 
@@ -77,7 +77,7 @@ const Trips = ({trips, todayTrips, futureTrips, setFutureTrips}) => {
                 <h2>سفرهای آینده</h2>
                 <div className="search">
                     <span className="title">جستجوی مسافر بر اساس</span>
-                    <input type="text" value={date} placeholder="مثلا 1402/7/28" onChange={searchTrip} />
+                    <input type="text" value={date} placeholder="مثلا 1402/8/10" onChange={searchTrip} />
                 </div>
                 {
                     futureTrips.map(trip =>
@@ -101,7 +101,7 @@ const Trip = ({id, origin, destination, time}) => {
     return (
         <div className="trip list-item">
             <span className="title">{origin} به {destination}، ساعت {time}</span>
-            <Link to={`/trip/${id}`}>
+            <Link to={`/trip/${id}#`}>
                 <button className="btn-yellow">مشاهده سفر</button>
             </Link>
         </div>
